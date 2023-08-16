@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+    <div class="all">
+        <button class="btn"></button>
+        <form action="#" style="display: none;" id="form" method="get">
+        <fieldset>
+            <legend>Add a book</legend>
+            <label for="name">Book name</label>
+            <input type="text" id="name" name="user_bookname" required minlength="1" maxlength="25" placeholder="Lord Of The Rings">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="user_author" required minlength="1" maxlength="25" placeholder="Tolkien">
+            <label for="pages">Pages red</label>
+            <input type="number" id="pages" name="user_pages" value="0" min="0" required>
+            <div class="btns">
+            <button type="submit" class="btn2">Add</button>
+            <button type="reset" class="btn3">Reset</button>
+            </div>
+        </fieldset>
+           
+        </form>
+        <div class="card" style="display: none;">
+           
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
