@@ -11,26 +11,32 @@
     
     <div class="all">
         <button class="btn"></button>
-        <form action="#" style="display: none;" id="form" method="get">
+        <form action="#" style="display: none;" id="form" method="get" onsubmit="signup(event)">
         <fieldset>
+            
             <legend>Add a book</legend>
+            <div class="fieldset">
             <label for="name">Book name</label>
-            <input type="text" id="name" name="user_bookname" required minlength="1" maxlength="25" placeholder="Lord Of The Rings">
+            <input type="text" id="name" name="user_bookname" minlength="1" maxlength="25" placeholder="Lord Of The Rings" required>
             <label for="author">Author</label>
             <input type="text" id="author" name="user_author" required minlength="1" maxlength="25" placeholder="Tolkien">
             <label for="pages">Pages red</label>
-            <input type="number" id="pages" name="user_pages" value="0" min="0" required>
+            <input type="number" id="pages" name="user_pages" value="0" min="0" max="100000" required>
+           <div class="checkdiv">
+            <label for="check">Read</label>
+            <input type="checkbox" id="check">
+           </div>
             <div class="btns">
             <button type="submit" class="btn2">Add</button>
             <button type="reset" class="btn3">Reset</button>
+            <button class="btn4">Close</button>
+            </div>
             </div>
         </fieldset>
            
         </form>
-        <div class="card" style="display: none;">
-           
-        </div>
-    </div>
+<div class="cards"></div>
+     
 
     <script src="script.js"></script>
 </body>
