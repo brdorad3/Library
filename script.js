@@ -10,12 +10,13 @@ let newBook =  new book(title, author, pages, read);
 library.push(newBook)
 console.log(library)
 }
-
-function book(title,author, pages, read){
-this.title=title;
-this.author=author;
-this.pages=pages;
-this.read=read;
+class book{
+   constructor(title, author, pages, read){
+      this.title=title
+      this.author=author
+      this.pages=pages
+      this.read=read
+   }
 }
 
 book.prototype.toggleRead= function(){
@@ -92,7 +93,3 @@ addCard()
          cards.appendChild(card);
       }
    }
-   
-
-
-
